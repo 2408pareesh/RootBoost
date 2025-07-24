@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex min-h-screen">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-gray-800 p-6 space-y-6">
+    <h2 class="text-2xl font-bold text-white">Dashboard</h2>
+    <nav class="space-y-2">
+      <a href="#" class="block text-gray-300 hover:text-white">Profile Settings</a>
+      <a href="#" class="block text-gray-300 hover:text-white">Security</a>
+      <a href="#" class="block text-gray-300 hover:text-white">Notifications</a>
+      <a href="#" class="block text-gray-300 hover:text-white">Appearance</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-10 bg-gray-900 space-y-10">
+    <header>
+      <h1 class="text-3xl font-semibold">Settings</h1>
+      <p class="text-gray-400">Manage your account preferences</p>
+    </header>
+
+    <!-- Profile Settings -->
+    <section class="bg-gray-800 p-6 rounded-xl shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">Profile Information</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm">Username</label>
+          <input type="text" class="w-full p-2 rounded bg-gray-700 border border-gray-600 text-white" placeholder="Your username">
+        </div>
+        <div>
+          <label class="block text-sm">Email</label>
+          <input type="email" class="w-full p-2 rounded bg-gray-700 border border-gray-600 text-white" placeholder="you@example.com">
+        </div>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-white">Save Changes</button>
+      </form>
+    </section>
+
+    <!-- Security Settings -->
+    <section class="bg-gray-800 p-6 rounded-xl shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">Security</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm">Change Password</label>
+          <input type="password" class="w-full p-2 rounded bg-gray-700 border border-gray-600 text-white" placeholder="New password">
+        </div>
+        <div>
+          <label class="block text-sm">Two-Factor Authentication</label>
+          <label class="inline-flex items-center mt-2">
+            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded">
+            <span class="ml-2 text-gray-300">Enable 2FA</span>
+          </label>
+        </div>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-white">Update Security</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
